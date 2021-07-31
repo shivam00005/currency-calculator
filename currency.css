@@ -1,0 +1,88 @@
+*{
+  margin:0;
+}
+body{
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  height: 100vh;
+  font-family:Sans-Serif;
+}
+#img{
+  width: 150px;
+  border-radius: 50%;
+  background: transparent;
+}
+h1{
+  color:#00ff85;
+}
+p1{
+  text-align: center;
+}
+.currency{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+}
+input{
+  border: 0;
+  background: transparent;
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+select{
+  background: transparent;
+ -moz-appearance:none;
+  webkit-appearance: none;
+  appearance: none;
+ 
+  border-radius: 8px;
+  border: 1px solid #d5dee0;
+  font-size: 20px;
+  padding: 10px 20px 10px 10px;
+  background-image: url('<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>');
+  background-position: right 10px top 30%, 0, 0;
+  background-size: 12px auto, 100%; 
+ background-repeat: no-repeat;
+}
+
+select:focus, input:focus{
+  outline: 0;
+
+}
+.swap-rate-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+button{
+  color: white;
+  background-color:#00ff85 ;
+  padding: 10px;
+  margin-left: 20px;
+ border: 1px solid #d5dee0;
+  border-radius: 10px;
+}
+.rate{
+  background: transparent;
+  color: #00ff85;
+  padding: 0 10px;
+  margin-right: 5px;
+  font-size: 20px;
+
+}
+@media(max-width:500px){
+  .currency input{
+    width: 100px;
+  }
+  .currency select{
+    width: 200px;
+  }
+}
